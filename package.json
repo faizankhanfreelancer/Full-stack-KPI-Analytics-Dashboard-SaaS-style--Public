@@ -1,0 +1,28 @@
+{
+  "name": "kpi-analytics-dashboard",
+  "version": "1.0.0",
+  "description": "Professional Business KPI Analytics Dashboard - Full Stack Application",
+  "scripts": {
+    "install:all": "npm install && cd app && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd app && npm run dev",
+    "build": "cd app && npm run build",
+    "seed": "cd server && npm run seed",
+    "start": "cd server && npm start"
+  },
+  "keywords": [
+    "kpi",
+    "dashboard",
+    "analytics",
+    "react",
+    "nodejs",
+    "mongodb",
+    "business-intelligence"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
